@@ -1,0 +1,26 @@
+---
+java_package: java-11-openjdk-devel
+tomcat_download_url: https://downloads.apache.org/tomcat/tomcat-9/v9.0.50/bin/apache-tomcat-9.0.50.tar.gz
+tomcat_download_dest: /tmp/apache-tomcat-9.0.50.tar.gz
+tomcat_group: tomcat
+tomcat_user: tomcat
+tomcat_home_dir: /opt/tomcat
+tomcat_shell: /bin/false
+ansible_python_interpreter: /usr/bin/python2.7
+tomcat_check_dir: /opt/tomcat/conf
+tomcat_directories_for_group_permissions:
+  - /opt/tomcat/webapps
+  - /opt/tomcat/work
+  - /opt/tomcat/temp
+  - /opt/tomcat/logs
+tomcat_service_file: /etc/systemd/system/tomcat.service
+java_executable: /usr/lib/jvm/java-11-openjdk-11.0.11.0.9-1.el7_9.x86_64
+tomcat_description: Apache Tomcat Web Application Container by DevOps Team
+tomcat_admin_username: vivek
+tomcat_admin_password: vivek@123
+tomcat_admin_roles:
+  - manager-gui
+  - admin-gui
+tomcat_users_xml: /opt/tomcat/conf/tomcat-users.xml
+tomcat_manager_context: /opt/tomcat/webapps/manager/META-INF/context.xml
+

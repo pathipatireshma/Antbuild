@@ -1,0 +1,5 @@
+---
+# tasks file for tomcat
+- name: Execute tasks
+  import_tasks: tomcat9-deploy.yml
+  
