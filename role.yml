@@ -1,7 +1,7 @@
 ---
 
 - name: Invoke roles
-  hosts: web
-  #become: yes
+  hosts: web  
+  become: yes
   roles:
    - tomcat
