@@ -1,0 +1,15 @@
+---
+
+- name: dir and file creation in webservers
+  hosts: web
+  become: yes
+  tasks:
+  - name: create a dir
+    file: 
+      path: /home/centos/DIRWEB
+      state: directory
+  - name:
+    copy:
+       contents: Hi Harini
+       dest: /home/centos/mydir/web.txt
+
