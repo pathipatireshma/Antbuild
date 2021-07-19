@@ -8,6 +8,8 @@
 <title>Registration Page</title>
 </head>
 <body>
+	
+	Hello! World!
 
 <form:form method="POST" commandName="user">
 	<table>
